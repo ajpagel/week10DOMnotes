@@ -6,14 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <script src="TODOAPP.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body class="container">
     <!--form for user to input into TODO list first add card to div-->
+    <br>
     <div class="card">
-        <p>Hello</p>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                      <!--style with form-group-->
+                    <div class="form-group">
+                        <!--create label-->
+                        <label for="new-start-date">Start Date</label>
+                        <!--create input that is the start date-->
+                        <input type="date" class="form-control" id="new-start-date">
+
+                    </div>
+                </div>
+                <div class="col-sm">
+                      <!--style with form-group-->
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                        
+                    </div>
+                </div>      
+            </div>
+
+<!--create another row for info that is the TODO-->
+            <div class="row">
+                <div class="col-sm">
+                    <!--style with form-group-->
+                    <div class="form-group">
+                        <label for="new-task">Task</label>
+                        <input type="text" class="form-control" id="Task">
+                        
+                    </div>
+                </div>
+                <div>
+                <button id="add" class="btn btn-primary from-control">Create</button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    
 
 
 
