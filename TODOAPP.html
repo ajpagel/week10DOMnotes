@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-    <script src="TODOAPP.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body class="container">
@@ -40,22 +39,36 @@
                     <!--style with form-group-->
                     <div class="form-group">
                         <label for="new-task">Task</label>
-                        <input type="text" class="form-control" id="Task">
+                        <input type="text" class="form-control" id="new-task" placeholder="Task">
                         
                     </div>
                 </div>
-                <div>
+            </div>
+            <!--create button outside of row-->
+            <div>
                 <button id="add" class="btn btn-primary from-control">Create</button>
-                </div>
             </div>
         </div>
     </div>
+
+
+    <!-- create table to keep tasks (use javascript)-->
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Task</th>
+            <th>Date Created</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
 
     
 
 
 
 
+    <script src="TODOAPP.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
